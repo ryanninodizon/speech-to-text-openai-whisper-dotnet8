@@ -15,9 +15,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
-
 
 app.MapPost("/transcibe", async Task<IResult> () =>
 {
