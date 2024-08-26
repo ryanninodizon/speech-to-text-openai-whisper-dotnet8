@@ -39,5 +39,4 @@ app.MapPost("/translate", async Task<IResult> () =>
 
     return Results.Ok(new {response.Value.Text}); 
 });
-
 app.Run();
