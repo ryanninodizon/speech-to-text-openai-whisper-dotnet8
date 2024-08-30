@@ -3,5 +3,7 @@
 GET {{audtio_to_text_HostAddress}}/weatherforecast/
 Accept: application/json
 
+GET {{audtio_to_text_HostAddress}}/test/
+Accept: application/json
 
 ###
