@@ -24,7 +24,6 @@ app.MapPost("/transcibe", async Task<IResult> () =>
     };
     var audioClient = new AudioClient("whisper-1",openAIkey);
     var response = await audioClient.TranscribeAudioAsync("transcribe.mp4",audiOptions);
-
     return Results.Ok(new {response.Value.Text}); 
 });
 app.MapPost("/translate", async Task<IResult> () =>
